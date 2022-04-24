@@ -1,16 +1,29 @@
-#!/usr/local/bin/python3
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Requirements:
+    python3
+    gcc
+It is recomended that you have this in a new folder for ease of viewing.
+
+This code will get the times of the prime number finding code and put the results into a text file called TestData and adds a number to the end,
+this can be removed by comenting out the lines 45-53 and adding back:
+with open('TestData.txt', 'w') as file:
+    for thing in data:
+        file.write( ' | '.join(thing) )
+        file.write('\n')
+        
+If you would like the number you must create a text file called index.txt, this will be included in this repository.
+"""
 from os import system
 
 data = [[] for i in range(4)]
 for j in range(1, 5):
-    # with is like your try .. finally block in this case
     with open('IsPrimeForLargeTest.cpp', 'r') as file:
-        # read a list of lines into data
         code = file.readlines()
 
-    # now change the 2nd line, note that you have to add a newline
     num = str(100*(10**j)+101)
-    code[32] = f"    unsigned long number = {num};\n"
+    code[32] = f"    unsigned long number = {num};  // This number must be odd for the code to find primes\n"
 
     # and write everything back
     with open('IsPrimeForLargeTest.cpp', 'w') as file:
