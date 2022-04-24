@@ -1,1 +1,1 @@
-Hello these are my main projects.
+This folder contains the IsPrimeFullyOptamised.cpp, the main code and the python code to test said .cpp code. This IsPrime c++ code is as optamised as I could make it, feel free to make the number very large and run it overnight. Tell me if you get above 8 billion.
