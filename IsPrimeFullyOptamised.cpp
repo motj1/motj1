@@ -30,7 +30,7 @@ void findPrimes(unsigned long& number){
 
 
 int main(){
-    unsigned long number = 10000000101;
+    unsigned long number = 10000000101; // This number must be odd for the code to find primes
 
     findPrimes(number);
     std::ofstream myfile;
