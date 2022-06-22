@@ -1,0 +1,233 @@
+
+:root {
+  --blue: #b5e0e6; /* Back */
+  --firsttext: #f0442e; /* Text */
+  --background: #ffeabb; /* Back */
+  --nav: #faab82; /* Back */
+  --seccondtext: #086788;/* #0953A8; /*#052F5F; /* Text */
+  --navtxt: #157145;/* #1F83FF; /* Text */
+  --white: #f2f2f2;
+  --black: #141115;
+}
+
+/* video */
+
+.video {
+  width: 400px;
+  height: 400px;
+  float:left;
+}
+
+/* Fade in */
+.fade-in-image {
+  animation: fade 3s;
+}
+@keyframes fade {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  50% {opacity:1;}
+  70% {opacity:1;}
+  85% {opacity:0.5;}
+  100% {opacity:1;}
+}
+@keyframes second {
+  0% {opacity:0;}
+  25% {opacity:0;}
+  50% {opacity:1;}
+  70% {opacity:1;}
+  85% {opacity:0.5;}
+  100% {opacity:1;}
+}
+@keyframes thrid {
+  0% {opacity:0;}
+  45% {opacity:0;}
+  70% {opacity:1;}
+  85% {opacity:0.5;}
+  100% {opacity:1;}
+}
+@keyframes last {
+  0% {opacity:0;}
+  65% {opacity:0;}
+  70% {opacity:1;}
+  85% {opacity:0.5;}
+  100% {opacity:1;}
+}
+
+.box {
+  width: 40%;
+  height: 200px;
+  background: orange;
+  border-radius: 2px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.a {
+  margin: 80vh auto 0 auto;
+}
+
+/* Card */
+
+.hover {
+	float:left;
+	width: 19%/*315px*/;
+	text-align: center;
+	color: var(--green);
+	margin: 6%;
+	margin-left: 6.5%; 
+	margin-right: 6.5%;
+}
+
+.hover div:hover {
+	transition: transform 450ms;
+	transform: translateY(-10px);
+}
+
+.hover div:not(:hover) {
+	transition: transform 450ms;
+	transform: translateY(10px);
+}
+
+/* Contact form */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--background);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: none;
+  color: var(--black);
+}
+
+input[type=password] {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid var(--background);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: none;
+  color: var(--black);
+}
+
+input[type=email] {
+  width: 20%;
+  padding: 12px;
+  border: 1px solid var(--background);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: none;
+  color: var(--black);
+}
+
+button {
+  background-color: var(--seccondtext);
+  color: var(--white);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-style: bold;
+}
+
+button:hover {
+  background-color: var(--blue);
+  color: var(--navtxt);
+}
+
+/*   Sidebar   */
+.sidebar button {
+	all: initial; all: unset;
+	width: 75px;
+	height: 75px;
+}
+
+.sidebar button:hover {
+	all: initial; all: unset;
+	width: 75px;
+	height: 75px;
+	border-radius: 15px;
+	background-color: var(--firsttext);
+	transition: transform 450ms;
+	transform: translateY(-10px);
+}
+
+
+.sidebar button:not(:hover) {
+	transition: transform 450ms;
+	transform: translateY(0px);
+}
+
+
+/*   end Sidebar   */
+
+.slideshow-container {
+  position: relative;
+  margin-left: 0px;
+  margin-right: 0px;
+  box-sizing: border-box;
+  width: 300px;
+}
+.slideshow-container img {width:130%; height:100%; margin-top: 0px; margin-left: -15.5%;}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1060px) {
+  .hover, .card {   
+    width: 92%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Checkout</title>
+	<link rel="icon" type="image/x-icon" href="images/SimplyFruitymod.ico">
+	<link rel="stylesheet" href="Stylesheet.css">
+	<link rel="stylesheet" href="Animate.css">
+	<link rel="stylesheet" href="cart.css">
+	<script src="scrypt.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			if (checkEmail(document.forms.myForm.email.value)){
+				$.ajax({
+					url:"https://api.apispreadsheets.com/data/L1k4v6x4hELPlqJZ/",
+					type:"post",
+					data:$("#myForm").serializeArray(),
+					success: function(){
+						alert("Purchase has been logged your order will be processed soon.");
+						document.getElementById("Customer").innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf5ru3sEHaMb0jkCkukzOBU7OzGo-lQw0S7xXSo8CfctIijOA/viewform?embedded=true" width="1554" height="605" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
+					},
+					error: function(){
+						alert("There was an error.")
+					}
+				});
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div class="topnav">
+	  <a href="index.html">Home</a>
+	  <a href="About.html">About</a>
+	  <a href="Contact.html">Contact us</a>
+	  <a href="Products.html">Products</a>
+	  <a class="active" href="Cart.html">Cart</a>
+	  <a href="Login.html">Login</a>
+	  <img src="images/SimplyFruitymod.png" alt="logo" width="48" height="48" style="float:right;">
+	</div>
+	<div class="header">
+		<h1>Checkout</h1>
+	</div>
+	<br>
+	<div class="cartbody">
+		<h2>Items to purchase</h2>
+		<div id="cart">
+		</div>
+		<script type="text/javascript">
+		doShowAll();
+		</script>
+		<div id="Customer"></div>
+		<form method="post" id="myForm">
+		</form>
+		<script type="text/javascript">
+		makeForm();
+		</script>
+		<button type="submit" class="Checkout" onClick="SubForm()"><b>Buy</b></button>
+		<div style="clear:both"></div>
+	</div>
+	<br>
+	<a href="sources.html">
+	<div class="footer">
+		<h2>Sources</h2>
+	</div>
+	</a>
+</body>
+</html>

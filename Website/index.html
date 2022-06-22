@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Colours: Blue : #b5e0e6 : Red : #f0442e : Background:#ffeabb : Skin:#faab82 : Green:#a9ca57 : Yellow:#fec81d : White:#f2f2f2 : #b9ceff -->
+<!-- Selling: Dragonfruit ; Avacado ; Mango ; Papaya ; Passionfruit ; Coconut ; Pineapple ; Lychee ; Grapefruit -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Simply Fruity</title>
+	<link rel="icon" type="image/x-icon" href="images/SimplyFruitymod.ico">
+	<link rel="stylesheet" href="Stylesheet.css">
+	<link rel="stylesheet" href="Animate.css">
+</head>
+
+<body>
+	<div class="topnav">
+		<a class="active" href="index.html">Home</a>
+		<a href="About.html">About</a>
+		<a href="Contact.html">Contact us</a>
+		<a href="Products.html">Products</a>
+		<a href="Cart.html">Cart</a>
+		<a href="Login.html">Login</a>
+		<div>
+			<img src="images/SimplyFruitymod.png" alt="logo" width="48" height="48" style="float:right;">
+		</div>
+	</div>
+	
+	<div class="header">
+		<h1>Simply Fruity</h1>
+		<p>Lets get Fruity</p>
+	</div>
+	
+	<br>
+	
+<!--	<div id="cards" style="margin-left:-33px; height: 362.44px; margin-top:3%;">-->
+	<div style="animation: fadeIn 3s;">
+		<a href="Products.html">
+		<div class="hover" style="margin-bottom: 0%; margin-top: 0%;"><!--style="margin-bottom: 1%; margin-top: 3%">-->
+			<div class="card">
+				<img src="images/Fruits/Productspage.png" alt="Navigate to the products page." width="200" height="200">
+				<h3>Products</h3>
+			</div>
+		</div>
+		</a>
+	</div>
+	
+	<div style="animation: second 3s;">
+		<a href="About.html">
+		<div class="hover" style="margin-bottom: 0%; margin-top: 0%; margin-left: 7.5%; margin-right: 7.5%" id="mid"><!--margin-bottom: 1%; margin-top: 3%; margin-left: 7.5%; margin-right: 7.5%">-->
+			<div class="card">
+				<img src="images/SimplyFruity.png" alt="Navigate to the products page." width="200" height="200">
+<!--				<img src="images/Fruits/Productspage.png" alt="Navigate to the products page." width="200" height="200">-->
+				<h3>About</h3>
+			</div>
+		</div>
+		</a>
+	</div>
+	
+	<div style="animation: thrid 3s;">
+		<a href="Contact.html">
+		<div class="hover" style="margin-bottom: 0%; margin-top: 0%"><!--style="margin-bottom: 1%; margin-top: 3%">-->
+			<div class="card">
+<!--				<img src="images/SimplyFruity.png" alt="Navigate to the products page." width="200" height="200">-->
+				<img src="images/Fruits/Contact.png" alt="Navigate to the products page." width="200" height="200">
+				<h3>Contact us</h3>
+			</div>
+		</div>
+		</a>
+	</div>
+<!--	</div>-->
+	
+	<div style="clear:both"></div>
+	
+	<div class="txtbox" style="height:350px">
+		<div style="width:65%; ">
+			<h2>The benefits of fruit</h2>
+			<p>A colourful diet allows for a more colourful lifestyle, we here a Simply Fruity want to make your access to fresh fruit easy and quick. The less time you have to worry about buying fruit means having more time to do other things.</p>
+		</div>
+		
+		<div style="width:35%; justify-content: center;">
+			<video width="320" height="240" autoplay loop muted>
+			  <source src="Images/fruit-ad.mp4" type="video/mp4">
+			Your browser does not support video.
+			</video>
+		</div>
+	</div>
+	<div class="txtbox" style="height:350px">
+		<div style="width:65%;">
+			<h2>Our support for pride</h2>
+			<p>In celebration of pride, we support everyone from all walks of life and wish for people to pursue a more colourful diet full of nutritious fruits.</p>
+		</div>
+		
+		<div style="width:35%; justify-content: center;">
+			<video width="320" height="240" autoplay loop muted>
+			  <source src="Images/pride.mp4" type="video/mp4">
+			Your browser does not support video.
+			</video>
+		</div>
+	</div>
+	<br>
+	<a href="sources.html">
+	<div class="footer">
+		<h2>Sources</h2>
+	</div>
+	</a>
+	<script>
+	var w = window.innerWidth;
+//    document.getElementById("cards").style.width = ""+w+"px";
+//	document.getElementById("cards").style.paddingLeft = ""+33+"px";
+	if (w > 1450){
+		document.getElementById("mid").style.marginLeft = ""+7.5+"%";
+		document.getElementById("mid").style.marginRight = ""+7.5+"%";
+	} else {
+		document.getElementById("mid").style.marginLeft = ""+6.5+"%";
+		document.getElementById("mid").style.marginRight = ""+6.5+"%";
+	}
+	</script>
+</body>
+</html>

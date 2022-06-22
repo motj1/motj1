@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- Selling: Dragonfruit ; Avocado ; Mango ; Papaya ; Passionfruit ; Coconut ; Pineapple ; Lychee ; Grapefruit ; Banana ; Kiwi fruit ; Lemon -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Products</title>
+	<link rel="icon" type="image/x-icon" href="images/SimplyFruitymod.ico">
+	<link rel="stylesheet" href="Stylesheet.css">
+	<link rel="stylesheet" href="Animate.css">
+	<script type="text/javascript">
+	setTimeout(function () {
+	console.log("Loaded");
+	window.addEventListener("scroll",function() {
+		if (checkVisible(document.getElementById('Dragonfruit'))) {
+			document.getElementById('first').style.animation = "fade 3s";
+			document.getElementById('first').style.opacity = 1;
+		} else {
+			document.getElementById('first').style.animation = "";
+			document.getElementById('first').style.opacity = 0;
+		}
+		setTimeout(function () {
+		if (checkVisible(document.getElementById('Papaya'))) {
+			document.getElementById('seccond').style.animation = "fade 3s";
+			document.getElementById('seccond').style.opacity = 1;
+		} else {
+			document.getElementById('seccond').style.animation = "";
+			document.getElementById('seccond').style.opacity = 0;
+		}
+		setTimeout(function () {
+		if (checkVisible(document.getElementById('Pineapple'))) {
+			document.getElementById('third').style.animation = "fade 3s";
+			document.getElementById('third').style.opacity = 1;
+		} else {
+			document.getElementById('third').style.animation = "";
+			document.getElementById('third').style.opacity = 0;
+		}
+		setTimeout(function () {
+		if (checkVisible(document.getElementById('Banana'))) {
+			document.getElementById('last').style.animation = "fade 3s";
+			document.getElementById('last').style.opacity = 1;
+		} else {
+			document.getElementById('last').style.animation = "";
+			document.getElementById('last').style.opacity = 0;
+		}
+		}, 150);
+		}, 150);
+		}, 150);
+	});
+	}, 6500);
+
+	function checkVisible( elm ) {
+		var rect = elm.getBoundingClientRect();
+		var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+		return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+	}
+	</script>
+</head>
+
+<body>
+	<div class="topnav">
+	  <a href="index.html">Home</a>
+	  <a href="About.html">About</a>
+	  <a href="Contact.html">Contact us</a>
+	  <a class="active" href="Products.html">Products</a>
+	  <a href="Cart.html">Cart</a>
+	  <a href="Login.html">Login</a>
+	  <img src="images/SimplyFruitymod.png" alt="logo" width="48" height="48" style="float:right;">
+	</div>
+	<div class="header">
+		<h1>Products</h1>
+	</div>
+	<br>
+	
+<!--	<div class="fade-in-image" animation-delay: 0s;>-->
+	<div style="animation: fadeIn 6s;" id="first">
+		<a href="products/Dragonfruit.html">
+		<div class="hover">
+			<div class="card" id="Dragonfruit">
+				<img src="images/Fruits/Dragonfruit.png" alt="Navigate to the Dragonfruit page." width="200" height="200">
+				<h3>Dragonfruit</h3>
+			</div>
+		</div>
+		</a>
+		
+		<a href="products/Avocado.html">
+		<div class="hover" id="mid">
+			<div class="card">
+				<img src="Images/Fruits/Avocado.png" alt="Navigate to the Avocado page." width="210" height="200">
+				<h3>Avocado</h3>
+			</div>
+		</div>
+		</a>
+		
+		<a href="products/Mango.html">
+		<div class="hover">
+			<div class="card">
+				<img src="images/Fruits/Mango.png" alt="Navigate to the Mango page." width="200" height="200">
+				<h3>Mango</h3>
+			</div>
+		</div>
+		</a>
+	</div>
+	
+	<div style="clear:both"></div>
+	
+	<div style="animation: second 6s;" id="seccond">
+		<a href="products/Papaya.html">
+		<div class="hover" style="margin-top: 0px">
+			<div class="card" id="Papaya">
+				<img src="images/Fruits/Papaya.png" alt="Navigate to the Papaya page." width="220" height="200">
+				<h3>Papaya</h3>
+			</div>
+		</div>
+		</a>
+		
+		<a href="products/Passionfruit.html">
+		<div class="hover" style="margin-top: 0px;" id="mid1">
+			<div class="card">
+				<img src="images/Fruits/Passionfruit.png" alt="Navigate to the Passionfruit page." width="215" height="200">
+				<h3>Passionfruit</h3>
+			</div>
+		</div>
+		</a>
+		
+		<a href="products/Coconut.html">
+		<div class="hover" style="margin-top: 0px">
+			<div class="card" style="padding-top: 90px">
+				<img src="images/Fruits/Coconut.png" alt="Navigate to the Coconut page." width="220" height="160">
+				<h3>Coconut</h3>
+			</div>
+		</div>
+		</a>
+	</div>
+	
+	<div style="clear:both"></div>
+	
+	<div style="animation: thrid 6s;" id="third">
+		<a href="products/Pineapple.html">
+		<div class="hover" style="margin-top: 0px">
+			<div class="card" id="Pineapple">
+				<img src="images/Fruits/Pineapple.png" alt="Navigate to the Pineapple page." width="200" height="200">
+				<h3>Pineapple</h3>
+			</div>
+		</div>
+		</a>
+		
+		<a href="products/Lychee.html">
+		<div class="hover" style="margin-top: 0px;" id="mid2">
+			<div class="card">
+				<img src="images/Fruits/Lychee.png" alt="Navigate to the Lychee page." width="250" height="200">
+				<h3>Lychee</h3>
+			</div>
+		</div>
+		</a>
+		
+		<a href="products/Grapefruit.html">
+		<div class="hover" style="margin-top: 0px;">
+			<div class="card" style="padding-top: 60px">
+				<img src="images/Fruits/Grapefruit.png" alt="Navigate to the Grapefruit page." width="240" height="190">
+				<h3>Grapefruit</h3>
+			</div>
+		</div>
+		</a>
+	</div>
+	
+	<div style="clear:both"></div>
+	
+<!--	<div style="animation: last 6s;">-->
+	<div style="animation: last 6s;" id="last">
+		<a href="products/Banana.html">
+		<div class="hover" style="margin-top: 0px">
+			<div class="card" id="Banana">
+<!--				-->
+				<img src="images/Fruits/Banana.png" alt="Navigate to the Banana page." width="200" height="200"><!--width="200" height="200">63.49-->
+				<h3>Banana</h3>
+			</div>
+		</div>
+		</a>
+		
+		<a href="products/Kiwifruit.html">
+		<div class="hover" style="margin-top: 0px;" id="mid3">
+			<div class="card">
+				<img src="images/Fruits/Kiwifruit.png" alt="Navigate to the Kiwi fruit page." width="250" height="200">
+				<h3>Kiwi fruit</h3>
+			</div>
+		</div>
+		</a>
+		
+		<a href="products/lemon.html">
+		<div class="hover" style="margin-top: 0px">
+			<div class="card">
+				<img src="images/Fruits/lemon.png" alt="Navigate to the lemon page." width="200" height="200">
+				<h3>lemon</h3>
+			</div>
+		</div>
+		</a>
+	</div>
+	
+	<div style="clear:both"></div>
+	
+	<br>
+	<a href="sources.html">
+	<div class="footer">
+		<h2>Sources</h2>
+	</div>
+	</a>
+	<script>
+//	var w = window.innerWidth;
+//	var w = 1440;
+//    document.getElementById("cards").style.width = ""+w+"px";
+//	document.getElementById("cards").style.paddingLeft = ""+33+"px";
+//	let margin = 7.5;
+//	document.getElementById("mid").style.margin = ""+6.5+"%";
+//	document.getElementById("mid1").style.margin = ""+6.5+"%";
+//	document.getElementById("mid2").style.margin = ""+6.5+"%";
+//	document.getElementById("mid3").style.margin = ""+6.5+"%";
+//	document.getElementById("mid1").style.marginTop = ""+0+"%";
+//	document.getElementById("mid2").style.marginTop = ""+0+"%";
+//	document.getElementById("mid3").style.marginTop = ""+0+"%";
+//	document.getElementById("mid").style.marginLeft = ""+margin+"%";
+//	document.getElementById("mid").style.marginRight = ""+margin+"%";
+//	document.getElementById("mid1").style.marginLeft = ""+margin+"%";
+//	document.getElementById("mid1").style.marginRight = ""+margin+"%";
+//	document.getElementById("mid2").style.marginLeft = ""+margin+"%";
+//	document.getElementById("mid2").style.marginRight = ""+margin+"%";
+//	document.getElementById("mid3").style.marginLeft = ""+margin+"%";
+//	document.getElementById("mid3").style.marginRight = ""+margin+"%";
+	</script>
+</body>
+</html>

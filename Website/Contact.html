@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contact us</title>
+	<link rel="icon" type="image/x-icon" href="images/SimplyFruitymod.ico">
+	<link rel="stylesheet" href="Stylesheet.css">
+	<link rel="stylesheet" href="Animate.css">
+	<script src="scrypt.js"></script>
+	
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/TbJVYhDzq00bDRs7/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Contact information submitted. Well get right back to you :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+
+<body>
+	<div class="topnav">
+	  <a href="index.html">Home</a>
+	  <a href="About.html">About</a>
+	  <a class="active" href="Contact.html">Contact us</a>
+	  <a href="Products.html">Products</a>
+	  <a href="Cart.html">Cart</a>
+	  <a href="Login.html">Login</a>
+	  <img src="images/SimplyFruitymod.png" alt="logo" width="48" height="48" style="float:right;">
+	</div>
+	
+	<div class="container">
+		<form method="post" id="myForm"> <!--action="" method="post">-->
+
+			<label for="fname"><b>First Name</b></label>
+			<input type="text" id="fname" name="firstname" placeholder="Your first name.." autocomplete="off" required>
+
+			<label for="lname"><b>Last Name</b></label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name.." autocomplete="off">
+
+			<label for="country"><b>Country</b></label>
+			<select id="country" name="country">
+				<option value="australia">Australia</option>
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+			</select>
+
+			<label for="subject"><b>Subject</b></label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" autocomplete="off" required></textarea>
+			<!--<input type="submit" value="Submit">-->
+
+		</form>
+		<div style="float:right;">
+			<p style="color:#086788">Phone: <a href="tel:+61485826281" style="color:#157145">+61485826281</a> <br> Email: 216120@students.redlands.nsw.edu.au</p>
+		</div>
+		<button type="submit" onClick="SubForm()"><b>Submit</b></button>
+	</div>
+</body>
+</html>

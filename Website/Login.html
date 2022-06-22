@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="icon" type="image/x-icon" href="images/SimplyFruitymod.ico">
+	<link rel="stylesheet" href="Stylesheet.css">
+	<link rel="stylesheet" href="Animate.css">
+	<script src="scrypt.js"></script>
+</head>
+
+<body>
+	<div class="topnav">
+	  <a href="index.html">Home</a>
+	  <a href="About.html">About</a>
+	  <a href="Contact.html">Contact us</a>
+	  <a href="Products.html">Products</a>
+	  <a href="Cart.html">Cart</a>
+	  <a class="active" href="Login.html">Login</a>
+	  <img src="images/SimplyFruitymod.png" alt="logo" width="48" height="48" style="float:right;">
+	</div>
+	
+	<div class="container">
+		<form method="post" id="myForm"> <!--action="" method="post">-->
+
+			<label for="username"><b>Username</b></label>
+			<input type="text" id="uname" name="username" placeholder="Company username.." autocomplete="off" style="width: 80%;" required>
+			<br>
+			<label for="password"><b>Password</b></label>
+			<input type="password" id="pword" name="password" placeholder="Password.." autocomplete="off">
+		</form>
+		<button type="submit" onClick="login()"><b>Submit</b></button>
+	</div>
+	
+	<br>
+	<a href="sources.html">
+	<div class="footer">
+		<h2>Sources</h2>
+	</div>
+	</a>
+</body>
+</html>
