@@ -1,4 +1,4 @@
-// gcc Autoclicker.c -oAuto -framework ApplicationServices
+// gcc PlayCookieClicker.c -oAuto -framework ApplicationServices
 #include <ApplicationServices/ApplicationServices.h>
 
 void rpeat(int times, float x, float y, int sleep){ // 251.0,510.0
