@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  I am a student who enjoys learning
+  I am a university student who enjoys embedded systems and low level programming
 </h3>
 
 <div align="center">
@@ -13,30 +13,18 @@
 <div align="center" style="witdh:100%"> 
   <table>
     <tr>
-      <td valign="center" width="100px"><b>Server<b></td>
       <td valign="center" width="100px"><b>Dev<b></td>
     </tr>
-    <tr>    
+    <tr>
       <td valign="center" align="center" width="300px">
-        <img src="https://img.shields.io/badge/Managing_users-blue" /> 
-        <img src="https://img.shields.io/badge/Vim-blue" /> 
-        <img src="https://img.shields.io/badge/Nano-blue" /> 
-        <img src="https://img.shields.io/badge/PHP-blue" />
-        <img src="https://img.shields.io/badge/tmux-blue" /> 
-        <img src="https://img.shields.io/badge/git-blue" /> 
-        <img src="https://img.shields.io/badge/drivers-blue" /> 
-        <img src="https://img.shields.io/badge/Kali-blue" /> 
-        <img src="https://img.shields.io/badge/Administration-blue" />
-      </td>
-      <td valign="center" align="center" width="300px">
-        <img src="https://img.shields.io/badge/Python-blue" /> 
-        <img src="https://img.shields.io/badge/AWS-blue" /> 
-        <img src="https://img.shields.io/badge/Bash-blue" /> 
-        <img src="https://img.shields.io/badge/Docker-blue" /> 
-        <img src="https://img.shields.io/badge/Linux_Terminal-blue" /> 
         <img src="https://img.shields.io/badge/C-blue" /> 
         <img src="https://img.shields.io/badge/C++-blue" /> 
-        <img src="https://img.shields.io/badge/MySQL-blue" /> 
+        <img src="https://img.shields.io/badge/Bash-blue" /> 
+        <img src="https://img.shields.io/badge/Shell_Scrypting-blue" /> 
+        <img src="https://img.shields.io/badge/Linux_Terminal-blue" /> 
+        <img src="https://img.shields.io/badge/Embedded_Systems-blue" /> 
+        <img src="https://img.shields.io/badge/Computer_Architecture-blue" /> 
+        <img src="https://img.shields.io/badge/Python-blue" /> 
         <img src="https://img.shields.io/badge/SSH-blue" /> 
         <img src="https://img.shields.io/badge/zsh-blue" /> 
         <img src="https://img.shields.io/badge/Linux_administration-blue" /> 
